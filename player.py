@@ -4,9 +4,9 @@ class PlayerStats:
         self.position = position  # GK, DEF, MID, ATT
         self.stats = {}
 
-        # -----------------------
-        # GK-only stats
-        # -----------------------
+
+        # GK stats
+        
         if self.position == "GK":
             self.stats.update({
                 "goals_allowed": 0,
@@ -19,7 +19,7 @@ class PlayerStats:
                 "avg_pass_length": 0.0,
                 "goal_kick_percent_launched": 0.0,
                 "avg_goal_kick_length": 0.0,
-                "def_actions_outside_box_per90": 0.0
+                "def_actions_outside_box_per90": 0.0,
                 "passes_completed": 0,
                 "passes_attempted": 0,
                 "pass_completion_percent": 0.0,
